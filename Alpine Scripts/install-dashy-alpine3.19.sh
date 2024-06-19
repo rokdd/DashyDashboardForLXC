@@ -7,7 +7,7 @@ set -o errexit
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 
-#Initial system update
+#Initial system update... check how it is done at dashy: https://github.com/Lissy93/dashy/blob/master/Dockerfile
 apk update && apk upgrade
 echo -e "${RED}System Updated...${NC}"
 echo -e "${RED}Installing Required Files Now...${NC}"
@@ -28,7 +28,7 @@ yarn --version
 echo -e "Required: 1.22.19"
 echo -e "NodeJS Version:"
 node -v
-echo -e "Required: 18.20.1"
+echo -e "Required: 20.12.1"
 echo -e "${RED}If all the versions match then Dashy is ready to be installed...${NC}"
 sleep 4
 echo -e "${RED}Creating Dashy User and User Group...${NC}"

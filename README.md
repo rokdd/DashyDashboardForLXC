@@ -24,7 +24,7 @@
 ### Oneliner:
 
 ```
-wget https://raw.githubusercontent.com/Glitch3dPenguin/DashyOneLinerForUbuntu/main/Alpine%20Scripts/install-dashy-alpine3.16.sh && chmod +x install-dashy-alpine3.16.sh && ./install-dashy-alpine3.16.sh
+wget https://raw.githubusercontent.com/rokdd/DashyOneLinerForUbuntu/main/Alpine%20Scripts/install-dashy-alpine3.16.sh && chmod +x install-dashy-alpine3.16.sh && ./install-dashy-alpine3.16.sh
 ```
 
 The Alpine installer is highly recommended due to the incredibly low resource usage. After install you can expect to see this container use less than 75-100MB of memory. This is the same you would expect to use if you ran Dashy in docker. 

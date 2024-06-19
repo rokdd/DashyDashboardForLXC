@@ -17,7 +17,7 @@ echo -e "${RED}Running system update...${NC}"
 apk update && apk upgrade
 echo -e "${RED}System update complete...${NC}"
 echo -e "${RED}Installing NodeJS...${NC}"
-apk add --update nodejs=20.11.1-r0
+apk add --update nodejs=20.12.1-r0
 echo -e "${RED}NodeJS Installed...${NC}"
 echo -e "${RED}Installing Yarn...${NC}"
 apk add yarn

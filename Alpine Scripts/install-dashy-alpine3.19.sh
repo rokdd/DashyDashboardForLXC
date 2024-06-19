@@ -58,7 +58,7 @@ EOF
 chmod +x /home/dashy/start.sh
 
 #Create the service script for boot
-cat <<EOF > /etc/init.d/dlast yearashy
+cat <<EOF > /etc/init.d/dashy
 #!/sbin/openrc-run
 
 description="Running Dashy on system start"

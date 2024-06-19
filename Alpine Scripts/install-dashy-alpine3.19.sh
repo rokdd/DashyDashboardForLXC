@@ -41,12 +41,12 @@ echo -e "${RED}Cloneing Dashy...${NC}"
 git clone https://github.com/Lissy93/dashy.git
 cd /home/dashy/dashy/
 echo -e "${RED}Dashy Cloned...${NC}"
-yarn # Install dependencies
+yarn install --ignore-engines --immutable --no-cache --network-timeout 300000 --network-concurrency 1 # Install dependencies
 #Yarn will run out of memory when trying to build. This next command will allow 
 #NodeJS to build with a max size of 1000mb of memory. It will fail without it. 
 export NODE_OPTIONS=--max-old-space-size=1000
 #build Dashy 
-yarn build --mode production --no-clean
+yarn build --mode production
 #Let's make Dashy run on system startup
 #Create simple launch script for Dashy
 cat <<EOF > /home/dashy/start.sh

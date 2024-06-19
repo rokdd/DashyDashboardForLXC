@@ -19,6 +19,7 @@
 | alpine-3.15-default | ✅     |
 | alpine-3.16-default | ✅     |
 | alpine-3.17-default | ❌     |
+| alpine-3.19-default | ❌     |
 
 
 ### Oneliner:
@@ -29,21 +30,3 @@ wget https://raw.githubusercontent.com/rokdd/DashyDashboardForLXC/main/Alpine%20
 
 The Alpine installer is highly recommended due to the incredibly low resource usage. After install you can expect to see this container use less than 75-100MB of memory. This is the same you would expect to use if you ran Dashy in docker. 
 
-# Install on Ubuntu
-
-### Tested Ubuntu LXC Templates:
-
-|                   LXC Template              | Support |
-| ------------------------------------------- | ------- |
-| ubuntu-18.04-standard_18.04.1-1_amd64       | ✅     |
-| ubuntu-22.04-standard_22.04-1_amd64 (Focal) | ✅     |
-| ubuntu-22.04-standard_22.04-1_amd64 (Jammy) | ✅     |
-| ubuntu-22.10-standard_22.10-1_amd64         | ❌     |
-
-### Oneliner:
-
-```
-wget https://raw.githubusercontent.com/Glitch3dPenguin/DashyOneLinerForUbuntu/main/Ubuntu%20Scripts/install-dashy-ubuntu18.04-22.04.sh && chmod +x install-dashy-ubuntu18.04-22.04.sh && ./install-dashy-ubuntu18.04-22.04.sh
-```
-
-Ubuntu LXC containers are supported with the Ubuntu version of the script, HOWEVER you can expect to see much higher system usage due to Ubuntu overhead. (300MB+)

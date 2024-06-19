@@ -17,7 +17,7 @@ echo -e "${RED}Running system update...${NC}"
 apk update && apk upgrade
 echo -e "${RED}System update complete...${NC}"
 echo -e "${RED}Installing NodeJS...${NC}"
-apk add --update nodejs=18.20.1-r0
+apk add --update nodejs=20.11.1-r0
 echo -e "${RED}NodeJS Installed...${NC}"
 echo -e "${RED}Installing Yarn...${NC}"
 apk add yarn
@@ -46,7 +46,7 @@ yarn # Install dependencies
 #NodeJS to build with a max size of 1000mb of memory. It will fail without it. 
 export NODE_OPTIONS=--max-old-space-size=1000
 #build Dashy 
-yarn build
+yarn build --mode production --no-clean
 #Let's make Dashy run on system startup
 #Create simple launch script for Dashy
 cat <<EOF > /home/dashy/start.sh
